@@ -90,7 +90,7 @@ class _DataPageState extends State<DataPage>{
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
-                        image: _editData.img != null ? FileImage(File(_editData.img)) : AssetImage("image/pngegg.png"),
+                        image: _editData.img != null ? FileImage(File(_editData.img)) : AssetImage("image/daykhangluc.jpg"),
                         fit: BoxFit.cover),
                     ),
                   ),
@@ -151,6 +151,7 @@ class _DataPageState extends State<DataPage>{
                 TextField(
                   controller:  _descriptionController,
                   focusNode: _descriptionFocus,
+                  maxLines: 4,
                   decoration: InputDecoration(labelText: "Description"),
                   onChanged: (text){
                     _userEdited = true;
